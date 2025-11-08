@@ -1,0 +1,14 @@
+# IDE
+.idea/
+*.iml
+
+# (optional extras)
+.vscode/
+.DS_Store
+
+# Python (optional)
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
