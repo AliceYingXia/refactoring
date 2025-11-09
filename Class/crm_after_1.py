@@ -1,11 +1,6 @@
 '''A badly written, example CRM app.'''
-import itertools
-import os
-import sys
-from typing import Dict, List, Optional
 
-from sklearn import linear_model
-from sklearn.model_selection import train_test_split
+from typing import Dict, List, Optional
 
 def check_domain(x):
     if 'gmail' in x:
@@ -53,12 +48,12 @@ class Lead:
 
     def __init__(self,
                  company_website,
-                 company_siz,
+                 company_size,
                  touchpoints = [],
                  days_since_last_post = 0,
                  discount = 1):
         self.company_website = company_website
-        self.company_size = company_siz
+        self.company_size = company_size
         self.touchpoints = touchpoints
         self.days_since_last_post = days_since_last_post
         self.discount = discount
@@ -97,7 +92,7 @@ class Lead:
         )
         print(response)
 
-    def convert_lead(self, sevices):
+    def convert_lead(self, services):
         if self.company_size == 'smb':
             prompt = 'Hello small business!'
             self.respose_action(self, services, prompt)

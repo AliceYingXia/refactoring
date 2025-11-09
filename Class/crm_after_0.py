@@ -1,10 +1,4 @@
 '''A badly written, example CRM app.'''
-import itertools
-import os
-import sys
-
-from sklearn import linear_model
-from sklearn.model_selection import train_test_split
 
 def check_domain(x):
     if 'gmail' in x:
